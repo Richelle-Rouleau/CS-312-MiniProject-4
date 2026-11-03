@@ -1,0 +1,307 @@
+.site-header {
+  background-color: plum;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-title {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: rgb(162, 26, 162);
+  text-decoration: underline;
+}
+
+.welcome-text {
+  font-size: 0.95rem;
+}
+
+.home-page {
+  width: 100%;
+}
+
+.button-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.posts-container {
+  width: 100%;
+}
+
+.look-nice {
+  text-align: center;
+  margin-top: 25%;
+  font-size: 30px;
+}
+
+.post-card {
+  flex: 0 0 auto;
+  margin: 5%;
+  background: pink;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.post-card-body {
+  padding: 20px;
+}
+
+.post-title {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.post-content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-bottom: 20px;
+}
+
+.card-by {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.card-time {
+  font-size: 10px;
+  color: grey;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.my-btn {
+  background-color: black;
+  outline-color: black;
+  text-decoration: none;
+  color: magenta;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid magenta;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.my-btn:hover:not(:disabled) {
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+.my-btn:active:not(:disabled) {
+  background-color: magenta;
+  color: black;
+  border-color: black;
+}
+
+.my-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.delete {
+  color: red;
+  border-color: red;
+}
+
+.delete:hover:not(:disabled) {
+  background-color: red;
+  color: black;
+  border-color: black;
+}
+
+.delete:active:not(:disabled) {
+  background-color: red;
+  color: black;
+  border-color: black;
+}
+
+.auth-page {
+  text-align: center;
+  margin-top: 15%;
+  padding: 20px;
+}
+
+.auth-container {
+  width: min(400px, 100%);
+  margin: 0 auto;
+}
+
+.auth-container h2 {
+  margin-bottom: 25px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.auth-form input {
+  width: 75%;
+  max-width: 300px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 3px solid magenta;
+  background-color: seashell;
+  margin: 0 0 10px 0;
+  border-radius: 8px;
+  padding: 7px;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid rgb(162, 26, 162);
+  outline-offset: 2px;
+}
+
+.editor-page {
+  text-align: center;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.editor-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.editor-container h2 {
+  margin-bottom: 25px;
+}
+
+.post-form {
+  width: 100%;
+}
+
+.post-form input[type="text"] {
+  width: 75%;
+  max-width: 700px;
+}
+
+.post-form textarea {
+  border: 3px solid magenta;
+  padding: 15px;
+  background-color: seashell;
+  margin: 0 0 10px 0;
+  border-radius: 8px;
+  width: 75%;
+  min-height: 250px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.post-form hr {
+  width: 75%;
+  margin: 20px auto;
+}
+
+.my-link {
+  color: rgb(162, 26, 162);
+}
+
+.my-link:hover {
+  color: purple;
+}
+
+.error {
+  color: darkred;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 12px;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .main-nav {
+    gap: 10px;
+  }
+
+  .welcome-text {
+    width: 100%;
+  }
+
+  .post-card {
+    margin: 5% 3%;
+  }
+
+  .post-card-body {
+    padding: 15px;
+  }
+
+  .auth-page {
+    margin-top: 10%;
+  }
+
+  .editor-page {
+    margin-top: 10%;
+  }
+
+  .post-form input[type="text"],
+  .post-form textarea {
+    width: 95%;
+  }
+
+  .post-form hr {
+    width: 95%;
+  }
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0 25px;
+}
+
+.welcome-text {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
